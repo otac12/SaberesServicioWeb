@@ -1,0 +1,63 @@
+.popup{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup > .ventana{
+
+    height: 45vh;
+    width: 29vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+.popupimagen{
+    width: 75%;
+    height: 40%;
+
+}
+
+.tipo{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.mensaje{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 13px;
+}
+
+.botonaceptar{
+    width: 25%;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+
+.botoncancelar{
+    width: 25%;
+    border-radius: 20px;
+    border: 0;
+    background-color: white;
+    border-radius: 1px solid silver;
+    margin-left: 10%;
+}
+
+.BotonesPop{
+    width: 90%;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
