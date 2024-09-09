@@ -20,14 +20,16 @@
 <html>
     <head>
         <script src = "../js/FuncionesGenerales.js" defer></script>
+        <link rel = "Stylesheet" type="text/css" href= "../css/StyleGeneral.css">
         <script src = <?php echo $Url ?>  defer></script>
     </head>
     <body session = <?php echo $sesion ?> >
         <div id ="Menu">
-            <button onclick = "">Stock</button>
-            <button onclick = "">Usuarios</button>
-
+            <button id = "VerStock">Stock</button>
+            <button id = "VerUsuario">Usuarios</button>
+            <div><p>T</p></div>
             <p>Usuario</p>
+            <button>></button>
             <button onclick = "CerrarSesion()">Cerrar Sesion</button>
 
         </div>

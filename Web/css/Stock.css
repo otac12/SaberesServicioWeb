@@ -1,0 +1,214 @@
+#Cuerpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Cuerpo>div{
+    width: calc(100% - 20px);
+    padding-left: 20px;
+}
+
+#Cuerpo>div:nth-child(1){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5%;
+}
+
+#Cuerpo>div:nth-child(1)>button{
+
+    min-width: 50px;
+    max-height: 20px;
+    margin-right:4%;
+    border: 1px solid var(--Borde);
+    color: var(--Borde);
+
+}
+
+#Cuerpo>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+
+#Cuerpo>div:nth-child(2)>p:nth-child(1){
+    background-color: var(--Principal);
+    min-width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: white;
+    margin-right: calc(85% - 100px - 70px - 40px);
+}
+
+#Cuerpo>div:nth-child(2)>p:nth-child(2){
+    background-color: var(--Principal);
+    min-width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right: 3px;
+    color: white;
+}
+
+#Cuerpo>div:nth-child(2)>p:nth-child(3){
+    background-color: white;
+    min-width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right:10%;
+}
+
+#Cuerpo>div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    align-items: center;
+}
+
+#Cuerpo>div:nth-child(3)>button{
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+}
+
+#Cuerpo>div:nth-child(3)>div{
+    width: calc(95% - 40px);
+    height: 100%;
+    overflow-x: auto;
+}
+
+#Cuerpo>div:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+
+#Cuerpo>div:nth-child(4)>p:nth-child(1){
+    background-color: var(--Principal);
+    min-width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: white;
+    margin-right: calc(85% - 100px - 70px - 40px);
+}
+
+#Cuerpo>div:nth-child(4)>p:nth-child(2){
+    background-color: var(--Principal);
+    min-width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right: 3px;
+    color: white;
+}
+
+#Cuerpo>div:nth-child(4)>p:nth-child(3){
+    background-color: white;
+    min-width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right:10%;
+}
+
+#Cuerpo>div:nth-child(5){
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Cuerpo>div:nth-child(5)>button{
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+}
+
+#Cuerpo>div:nth-child(5)>div{
+    width: calc(95% - 40px);
+    height: 100%;
+    overflow-x: auto;
+}
+
+#Cuerpo>div:nth-child(6){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+
+}
+
+#Cuerpo>div:nth-child(6)>p:nth-child(1){
+    background-color: var(--Principal);
+    min-width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: white;
+    margin-right: calc(85% - 100px - 70px - 40px);
+}
+
+#Cuerpo>div:nth-child(6)>p:nth-child(2){
+    background-color: var(--Principal);
+    min-width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right: 3px;
+    color: white;
+}
+
+
+
+#Cuerpo>div:nth-child(6)>p:nth-child(3){
+    background-color: white;
+    min-width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right:10%;
+}
+
+#Cuerpo>div:nth-child(7){
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Cuerpo>div:nth-child(7)>button{
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+}
+
+#Cuerpo>div:nth-child(7)>div{
+    width: calc(95% - 40px);
+    height: 100%;
+    overflow-x: auto;
+}
+
+#Cuerpo>div:nth-child(8){
+    height: 38%;
+    display: flex;
+    justify-content: center;
+}
+
+#Cuerpo>div:nth-child(8)>div{
+    background-color: white;
+    width: 31%;
+    height: 90%;
+    margin-right: 25px;
+}
