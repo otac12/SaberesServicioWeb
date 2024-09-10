@@ -1,0 +1,79 @@
+#Cuerpo>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Cuerpo>div:nth-child(1){
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#Cuerpo>div:nth-child(1)>button{
+    width: 100px;
+    height: 20px;
+    margin-right: 30px;
+    border: 1px solid var(--Borde);
+    border-radius: 5px;
+    color: var(--Borde);
+}
+
+#Cuerpo>div:nth-child(1)>button:hover{
+    background-color: var(--Principal);
+    color: white;
+}
+
+#Cuerpo>div:nth-child(2){
+    width: 100%;
+    height: calc(100% - 60px);
+    justify-content: start;
+    align-items: center;
+}
+
+#Cuerpo>div>table{
+    width: 90%;
+    height: 95%;
+}
+
+#Cuerpo>div>table>thead{
+    height: 5%;
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(1){
+    width: 20%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(2){
+    width: 20%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(3){
+    width: 20%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(4){
+    width: 10%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(5){
+    width: 5%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}
+
+#Cuerpo>div>table>thead>tr>th:nth-child(6){
+    width: 5%;
+    border-bottom: 1px solid var(--Borde);
+    color: var(--Borde);
+}

@@ -15,9 +15,10 @@ CREATE TABLE IF NOT EXISTS Saberes.Usuarios(
 
 CREATE TABLE IF NOT EXISTS Saberes.Equipo(
     Id_Equipo BIGINT NOT NULL AUTO_INCREMENT,
-    Tipo_Usuario VARCHAR(100),
+    Tipo VARCHAR(100),
     Nombre VARCHAR(100),
     Estado BOOLEAN,
+    Icono VARCHAR(100),
 
     PRIMARY KEY (Id_Equipo)
     
@@ -41,6 +42,7 @@ CREATE TABLE IF NOT EXISTS Saberes.Componentes(
     Id_Componente BIGINT NOT NULL AUTO_INCREMENT,
     Nombre VARCHAR(100),
     Cantidad INT,
+    Icono VARCHAR(100),
 
     PRIMARY KEY (Id_Componente)
 );

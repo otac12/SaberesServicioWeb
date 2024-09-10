@@ -62,7 +62,12 @@ function Stock(){
                 Etiqueta.type = "text/css";
                 Etiqueta.href = "../css/Stock.css";
 
+                Js = document.createElement('script');
+                Js.id = "ScryptStock";
+                Js.src = "../js/Stock.js";
+
                 document.head.appendChild(Etiqueta);
+                document.head.appendChild(Js);
 
         });
 };
@@ -91,8 +96,12 @@ function Usuario (){
                 Etiqueta.type = "text/css";
                 Etiqueta.href = "../css/Usuario.css";
 
-                document.head.appendChild(Etiqueta);
+                Js = document.createElement('script');
+                Js.id = "ScryptUsuario";
+                Js.src = "../js/Usuario.js";
 
+                document.head.appendChild(Etiqueta);
+                document.head.appendChild(Js);
         });
 };
 
@@ -112,11 +121,16 @@ function BorrarContenido(){
     StyleStock = document.getElementById('StyleStock');
     StyleUsuario = document.getElementById('StyleUsuario');
 
+    ScryptStock = document.getElementById('ScryptStock');
+    ScryptUsuario = document.getElementById('ScryptUsuario')
+
     Cuerpo.innerHTML = '';
 
     if(StyleStock != null){
         StyleStock.remove();
+        ScryptStock.remove();
     }if (StyleUsuario != null) {
         StyleUsuario.remove();
+        ScryptUsuario.remove();
     }
 }

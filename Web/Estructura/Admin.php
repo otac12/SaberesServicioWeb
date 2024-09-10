@@ -4,6 +4,7 @@
     }
 
     if(isset($_SESSION['Usuario'])){
+        $Usuario = $_SESSION['Usuario'];
         if($_SESSION['Nivel'] == "Administrador"){
             $sesion = session_id();
             $Url = "../js/Admin.js";
@@ -20,6 +21,7 @@
 <html>
     <head>
         <script src = "../js/FuncionesGenerales.js" defer></script>
+        <script src = "../notificaciones/pop.js" defer></script>
         <link rel = "Stylesheet" type="text/css" href= "../css/StyleGeneral.css">
         <script src = <?php echo $Url ?>  defer></script>
     </head>
@@ -28,7 +30,7 @@
             <button id = "VerStock">Stock</button>
             <button id = "VerUsuario">Usuarios</button>
             <div><p>T</p></div>
-            <p>Usuario</p>
+            <p id="Usuario"><?php echo $Usuario ?></p>
             <button>></button>
             <button onclick = "CerrarSesion()">Cerrar Sesion</button>
 

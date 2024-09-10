@@ -4,6 +4,10 @@
     --Borde:#B2B2B2;
 }
 
+body{
+    position: relative;
+}
+
 #Menu {
     width:100%;
     height:10vh;
@@ -44,6 +48,11 @@
     
 }
 
+#Menu>button:nth-child(6):hover{
+    background-color: var(--Principal);
+    color: white;
+}
+
 #Menu>div{
     display: flex;
     align-items: center;
@@ -67,4 +76,78 @@
     background-color: var(--Fondo);
     width: 100%;
     height: 90vh;
+}
+
+.Fondo{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.Box{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.Box>div{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.Box>div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Box>div:nth-child(1)>p{
+    width: 90px;
+    margin-right: calc(70% - 90px);
+}
+
+.Box>div:nth-child(2){
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.Box>div:nth-child(2)>div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Box>div:nth-child(2)>div>input,select{
+    width: 80%;
+    margin-bottom: 10%; 
+}
+
+#Muestra{
+    width: 50px;
+    height: 50px;
+    background-color: var(--Borde);
+    border-radius: 5px;
+}
+
+.Box>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10%;
 }
