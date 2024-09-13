@@ -5,29 +5,6 @@ function AgregarStock(){
    PonerFormulario("AgregarStock");
 }
 
-function PonerFormulario(Formulario){
-    console.log("/Estructura/Formulario/"+Formulario+".html");
-    fetch(origen+"/Estructura/Formulario/"+Formulario+".html")
-    .then(response => {
-        if (!response.ok) {
-             throw new Error('Error al cargar el archivo HTML: ' + response.statusText);
-        }
-            return response.text();
-        })
-    .then(htmlContent => {
-            document.body.innerHTML += htmlContent;
-            document.getElementById('Icono').addEventListener('change',CambiarImagen);
-    });
-}
-
-function QuitarFormulario(){
-    Div = document.getElementById("Fondo");
-
-    if(Div != null){
-        Div.remove();
-    }
-}
-
 function CambiarImagen(event){
     valor = event.target.value;
     direccion = "../../css/Rescursos/"+valor+".png";
@@ -194,11 +171,32 @@ function EditarComponente(event){
     Input = document.createElement('input');
     Input.type = "num";
     Input.value = Cantidad;
+    Input.id = "Input"+id;
 
     Padre.replaceChild(Input,document.getElementById("Numero"+id));
     document.getElementById(id).src = "../../css/Rescursos/Guardar.svg";
     document.getElementById(id).removeEventListener('click',EditarComponente);
     document.getElementById(id).addEventListener('click',function(event){
         console.log("Se envio informacion con id "+event.target.id);
+
+        dato = JSON.stringify({
+            "Id": event.target.id,
+            "Cantidad": document.getElementById("Input"+event.target.id).value
+        });
+
+        fetch(origen+"/php/CambiarComponentes.php",{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+            body:dato
+        }).then(error => {
+                if (!error.ok) {
+                  throw new Error('La respuesta no fue satisfactoria');
+                }
+                return error.text();
+        }).then(Respuesta =>{
+            window.location.reload();
+        });
     });
 }

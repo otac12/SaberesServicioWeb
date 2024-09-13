@@ -4,7 +4,7 @@
 
     $Json = file_get_contents('php://input');
     $Respuesta = json_decode($Json);
-    $RespuestaFront=json_decode("{'Status':'','msg';''}");
+    $RespuestaFront=json_decode("{'Status':'','msg':''}");
 
     $conexion = new mysqli(Host,Usuario,Contrasena,DataBase);
 

@@ -134,3 +134,33 @@ function BorrarContenido(){
         ScryptUsuario.remove();
     }
 }
+
+function PonerFormulario(Formulario){
+    console.log("/Estructura/Formulario/"+Formulario+".html");
+    fetch(origen+"/Estructura/Formulario/"+Formulario+".html")
+    .then(response => {
+        if (!response.ok) {
+             throw new Error('Error al cargar el archivo HTML: ' + response.statusText);
+        }
+            return response.text();
+        })
+    .then(htmlContent => {
+            document.body.innerHTML += htmlContent;
+
+            Icono = document.getElementById('Icono');
+
+            if(Icono != null){
+                Icono.addEventListener('change',CambiarImagen);
+            }
+            
+    });
+}
+
+function QuitarFormulario(){
+    Div = document.getElementById("Fondo");
+
+    if(Div != null){
+        Div.remove();
+        window.location.href = window.location;
+    }
+}

@@ -42,6 +42,10 @@
     height: 5%;
 }
 
+#Cuerpo>div>table>tbody{
+    vertical-align: top;
+}
+
 #Cuerpo>div>table>thead>tr>th:nth-child(1){
     width: 20%;
     border-bottom: 1px solid var(--Borde);

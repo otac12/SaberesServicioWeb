@@ -1,4 +1,4 @@
-<div class="Fondo">
+<div id="Fondo" class="Fondo">
     <div class="Box">
         <div>
             <p>Agregar Usuario</p>
@@ -7,20 +7,20 @@
         <div>
             <div>
                 <p>Nombre</p>
-                <input type="text">
+                <input type="text" id="Nombre">
                 <p>Contraseña</p>
-                <input type="password">
+                <input type="password" id="Contrasena">
             </div>
             <div>
                 <p>Tipo</p>
-                <select>
+                <select id="Tipo">
                     <option value="Investigador">Investigador</option>
                     <option value="Adminitrador">Adminitrador</option>
                 </select>
             </div>
         </div>
         <div>
-            <button>Guardar</button>
+            <button onclick="EnviarUsuario()">Guardar</button>
         </div>
     </div>
 </div>

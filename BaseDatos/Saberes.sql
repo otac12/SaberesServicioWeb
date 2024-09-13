@@ -7,7 +7,8 @@ CREATE DATABASE IF NOT EXISTS Saberes;
 CREATE TABLE IF NOT EXISTS Saberes.Usuarios(
     Id_Usuario BIGINT NOT NULL AUTO_INCREMENT,
     Tipo_Usuario VARCHAR(100),
-    Nonmbre VARCHAR(100),
+    Nombre VARCHAR(100),
+    Contrasena VARCHAR(100),
 
     PRIMARY KEY (Id_Usuario)
 
